@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Roy Marmelstein" => "marmelroy@gmail.com" }
   s.source           = { :git => "https://github.com/andrew020/PhoneNumberKit.git", :tag => s.version.to_s }
-  s.social_media_url   = "http://twitter.com/marmelroy"
 
 
   s.requires_arc = true

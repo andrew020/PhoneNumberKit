@@ -9,7 +9,7 @@
 import Foundation
 
 /// Partial formatter
-public final class PartialFormatter {
+public final class PartialFormatter: NSObject {
     
     private let phoneNumberKit: PhoneNumberKit
 
@@ -27,8 +27,9 @@ public final class PartialFormatter {
         self.metadataManager = metadataManager
         self.parser = parser
         self.defaultRegion = defaultRegion
-        updateMetadataForDefaultRegion()
         self.withPrefix = withPrefix
+        super.init()
+        updateMetadataForDefaultRegion()
     }
 
     
